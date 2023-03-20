@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1> 
+    <h2>Listas Ordenadas</h2>
+    <ol type="1"> <!-- 1 A a I i-->
+        <li>Acordar
+        <li>Ligar o computador
+        <li>Estudar 
+        <li>Fazer Exercícios
+        <li>Comer
+        <li>Assistir
+    </ol>
+    <!--No HTML5 na tag 'li' eu posso utilizar ela sem o "/li", e também tenho parametro 'type' que é possivel ordenar a lista em ordem númerica normal e romana, letras maiusculas e minusculas -->
+    <!-- Posso usar Start dentro de ol para escolher em qual ordem minha lista ira começar-->
+    <h2>Listas não ordenadas</h2>
+    <h3>Lista de compras</h3>
+    <ul type="disc">   
+       <li>Pão
+       <li>Ingresso
+       <li>Celular
+       <li>Carne
+       <li>Feijão
+       <li>TV
+    </ul>
+    <!--A tag 'ul' é utlizada para "ordenar" listas sem a simplificação númerica, e sim com pontos, aqui também posso usar o parâmetro 'type' e usar dentro dele "disc, circle e square"-->
+    <h2>Misturando Listas: linguagens favoritas </h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper
+            <li>Visual Basic
+            <li>Fortran
+            <li>Delphi
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>JavaScript
+            <li>PHP
+            <li>Python
+            <li>Kotlin
+        </ol>
+    </ol>
+    <!--Ao misturar as tags e criar listas dentro de listas, caso eu queira dar seguimento na sequência das letras como escolhe acima, eu posso usar ao lado do parâmetro type o start que só responde através de números, então tenho que colocar o número que dar contagem a sequência da letra que parei-->
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>SuperNitendo</li>
+        <ul type="square">
+            <li>Street Fighter
+            <li>Mario Bros
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Brasfoot
+            <li>FIFA
+            <li>PES
+        </ul>
+        <li>Computador</li>
+        <ul type="square">
+            <li>Couter Striker
+            <li>Need for Speed 
+            <li>Call of Duty
+            <li>GTA
+        </ul>
+    </ol>
+    <!--É possível usar o 'ul' dentro de 'ol' e um bom macete/atalho, que para mudar várias linhas de uma vez é só clicar segurando a tecla'ALT-->
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+    <!--Para fazer uma lista de definição que é parecido com um dicionário, utilizamos a tag 'dl'(definiçao de lista), e dentro dessa tag, usamos mais duas tags 'dt' para (definir termo 'sobre oque vou falar') e 'dd' para (definir descrição 'para descrever ou dizer o significado do termo')-->
+
+</body>
+</html>

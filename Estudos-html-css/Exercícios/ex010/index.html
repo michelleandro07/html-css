@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <link rel="shortcut icon" href="favicon-logo.ico" type="image/x-icon">
+    <title>Trabalhando com Links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/gustavoguanabara" target="_blank" rel="external">repositório público no GitHub</a>.</p>
+    <p>Você também pode acessar as minhas <a href="https://www.youtube.com/c/CursoemV%C3%ADdeo/playlists" target="_blank" rel="external">playlists</a> de vídeos aulas gratuitas no meu canal no YouTube</p>
+    <!-- Para eu 'linkar' uma frase ou uma palavra, eu utilizo a tag 'a' para âncorar o link de destino da coisa que estou me referindo no meu paragráfo e adiciono o link dentro do parâmetro (href="") que vem logo ao lado do 'a'. E também caso os links não forem seus, do seu dominio ou do seu própio site, deve usar o parâmetro ('target="_blank") para o meu site não fechar quando clicarem no link que estiver proposto lá indicando que ele deve abrir fora do meu site (em outra janela) e (rel="external") indica que o link não é meu. -->
+   
+    <h1>Usando links internos</h1>
+   
+    <p>Esta é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next"> sengunda página</a></p>
+    <!-- Para eu abrir o link que é do meu domínio dentro da página atual e utlizando no parâmetro (rel"") a sigla "next", para informar a plataforma que a próxima página vai ser essa-->
+    
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícia</a></p>
+    <!--Caso o meu link esteja numa pasta, terei sempre que usar o atalho (ctrl-espaço) e para indicar que os meus links abram na minha página principal, posso utilizar no parâmetro (target"_self") ou deixar sem 'target'-->
+   
+    <h1>Links para download</h1>
+    <ul>
+        <li><a href="livro/Aula10.pdf" download="Aula10.pdf" type="application/pdf">Baixar a aula em PDF</a></li>
+        <li><a href="livro/Aula10.zip" download="Aula10.pdf" type="application/zip">Aula compactada em ZIP</a></li>
+    </ul>
+    <!--Utilazamos os parâmetros ('download' e 'type') para informar ao navegador que aquele link do arquivo proposto, é direcionado para fazer Downloads-->
+</body>
+</html>

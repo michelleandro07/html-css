@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: dimgray;
+    margin: 0px;
+}
+
+header {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+nav {
+    background-color: #585757;
+    padding: 3px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.589); 
+    
+    /*  Ordem dos paramêtros de sombras em caixas
+         
+        insert - sombreamento dentro
+        Deslocamento Horizontal
+        Delocamento Vertical
+        blur - embaçamento
+        spread - espalhamento
+        cor
+    */
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+main {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 4px 5px 7px 0px rgba(0, 0, 0, 0.411);
+    border-radius: 10px 0px; 
+    /* Raio da Borda, para arredondar a borda */
+    /* 
+    Sequência de parâmetros 
+
+    border-top-left-radius: 6px;     - encima esqueda
+    border-top-right-radius: 6px;    - encima direita
+    border-bottom-right-radius: 6px; - embaixo direita
+    border-bottom-left-radius: 6px;  - embaixo esquerda
+    */
+}
+
+article {
+    background-color: lightgray;
+}
+
+article > aside {
+    background-color: #a39f9f;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin: 0px;
+}
+
+footer > p {
+    margin: 0px;
+}
+
+/*
+div#bola {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 50px;
+}
+*/

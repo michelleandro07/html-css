@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture> <!--quer dizer que vai aparecer um imagem-->
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <!--<audio src="midia/Cru.mp3" controls autoplay></audio>--> <!--Para reproduzir um áudio no navegador da maneira simples-->
+    <audio preload="metadata" controls autoplay loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    <!--Caso alguns navegadores não sejam compativeis com com 'MP3' devo criar o 'source na sequência de possibilidades de formato de áudio, pra caso não seja compatível com um será com o outro em sequência e criando um parágrafo para baixar o arquivo, coso o navegador não carregue. OBS: os arquivos 'wav' não é muito recomendado utilizar, pois é muito pesado e pode prejudicar o site, dixando lento-->
+    <!-- Parâmetro 'preload' tem algumas siglas com 'auto', 'metadata' e 'none'--> 
+    <!--'auto' (padrão) vai carregar o arquivo de áudio inteiro assim que a página for carregada, mesmo que o usuário nunca aperte o play, 'metadata' vai carregar apenas as informações sobre o arquivo (tamanho, tempo, informações de direitos, etc), 'none' não vai carregar absolutamente nada até que o usuário clique no botão play ou um script inicie a reprodução--> 
+    <!-- e os parâmetros 'controls' e 'autoplay' para dar play e reproduxir o áudio e o atributo 'loop' vai fazer com que o áudio seja repetido eternamente assim que terminar a sua reprodução.-->
+</body>
+</html>

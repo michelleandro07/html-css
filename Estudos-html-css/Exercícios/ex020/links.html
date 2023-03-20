@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none; /*Tirar o sublinhado*/
+            font-weight: bold;  /*Negrito/Maior*/
+        }
+
+        a:visited {          /*Para link ja visitado*/
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }  /*Para sublinhar quando passar o mouse e preto*/
+
+        a:active {
+            color: yellow;
+        }  /*Para mudar a com quando apertar no link*/
+
+       .especial {
+        background-color: #f38093e0;
+       }
+       
+        .especial::before {     /*aparecer antes*/
+            content: '⇒ ';
+        }
+        
+        .especial::after {         /*aparecer depois*/
+            content: ' ⇐';   /*content-Conteúdo*/
+        } 
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/CursoemVideo" class="especial" target="_blank">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com/">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+</html>
+
+    <!-- 
+         #    = id 
+         .    = class
+         :    = pseudo-class
+         ::   = pseudo-element
+         >    = children
+    -->
+
+<!-- a::after { /*:: Pseudo elemento*/ /*after-depois*/
+            content:' [link]'; /*content-Conteúdo*/
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        } /*Para avisar depois/ao lado de cada link oq ele é */
+    
+      a::before {     /*aparecer antes*/
+            content: '⇒ ';
+        }
+        
+        a::after {         /*aparecer depois*/
+            content: ' ⇐';   /*content-Conteúdo*/
+        } 
+    
+    -->
+
+    

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <video width="500" height="400" poster="imagens/limoes-capa.png" controls autoplay>
+        <source src="midia/meu-video.m4v" type="video/mp4">
+        <source src="midia/meu-video.webm" type="video/webm">
+        <source src="midia/meu-video.mp4" type="video/mp4">
+        <source src="midia/meu-video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <!--Usamos a tag 'video' para indicar ao navegador que ele recebera um vídeo e posso usar os parâmetros 'width' e 'height' no HTML para melhorar o tmanho no navegador, o parâmetro 'poster' é utilizado para colocar uma capa no início do meu vídeo... OBS: tudo isso que for usada precisa estar na mesma pasta. E irei utilizando os 'source' para colocar cada formato de vídeo em sequência por tamanho e junto a isso oque for compativel com cada navegador irá rodar primeiro.--> <!--OBS: Desta forma os vídeos sendo pesados podem ocupar muita memória do serviço do servidor que irá te hospedar e com isso gerar um alto custo do plano de serviço, por conta dos constantes acessos.-->
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/zrIfhUVB_3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Inserindo vídeo do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/759911151?h=3a3669479e&color=ffffff&title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <!--Já desta forma, não iria ocupar espaço e nem preços na hospedagem, pois o seu video iria estar hospedado fora do seu servidor, mas mantendo acesso--> 
+    <!--O YouTube te proporicona ter a incorporação dos vídeos, mas o video ficaria público, onde tmabém não existe problema, mas caso o cliente queira que o vídeo tenha acessos limitados, o Vimeo é a melhor opção pra isso, lá se paga planos para isso, pode travar as vezes, mas torna o video limitado caso o cliente opte.-->
+</body>
+</html>
